@@ -15,8 +15,8 @@ pygame.draw.circle(screen, [255,255,255], [150, 135], 40)  # keskmine
 pygame.draw.circle(screen, [255,255,255], [150, 70],  30)  # pea
 
 # Silmad
-pygame.draw.circle(screen, [0,0,0], [138,65], 5)
-pygame.draw.circle(screen, [0,0,0], [162, 65], 5)
+pygame.draw.circle(screen, [0,0,0], [140,65], 5) #138 5
+pygame.draw.circle(screen, [0,0,0], [160, 65], 5) #162 5
 
 # Nina (punane kolmnurk)
 #pygame.draw.polygon(screen, värv, koordinaatide_loend)
