@@ -15,18 +15,18 @@ pygame.draw.circle(screen, [255,255,255], [150, 220], 50)  # alumine
 pygame.draw.circle(screen, [255,255,255], [150, 135], 40)  # keskmine
 pygame.draw.circle(screen, [255,255,255], [150, 70],  30)  # pea
 
-# Silmad
+# silmad
 pygame.draw.circle(screen, [0,0,0], [140,65], 5) #138 5
 pygame.draw.circle(screen, [0,0,0], [160, 65], 5) #162 5
 
-# Nina (punane kolmnurk)
-#pygame.draw.polygon(screen, värv, koordinaatide_loend)
+# nina (punane kolmnurk)
+# pygame.draw.polygon(screen, värv, koordinaatide_loend)
 pygame.draw.polygon(screen, [255,0,0], [[150, 90], [145, 75], [155, 75]])
 
-#värskendame ekraani
+# värskendame ekraani
 pygame.display.flip()
 
-#hoiame mängu elus (ilma selleta viskab kohe kinni)
+# hoiame mängu elus (ilma selleta viskab kohe kinni)
 running = True
 while running:
     # mängu sulgemine ristist

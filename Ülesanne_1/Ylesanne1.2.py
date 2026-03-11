@@ -17,10 +17,10 @@ pygame.draw.circle(screen, [0,255,0], [150, 235], 40)  # roheline
 # joonistame jooned
 pygame.draw.rect(screen, [128, 128, 128], [100, 15, 100, 270], 2)
 
-#värskendame ekraani
+# värskendame ekraani
 pygame.display.flip()
 
-#hoiame mängu elus (ilma selleta viskab kohe kinni)
+# hoiame mängu elus (ilma selleta viskab kohe kinni)
 running = True
 while running:
     # mängu sulgemine ristist
