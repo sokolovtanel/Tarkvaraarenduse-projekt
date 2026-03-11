@@ -1,4 +1,5 @@
 import pygame
+import sys
 pygame.init()
 
 # määrame ekraani suuruse
@@ -16,17 +17,15 @@ pygame.draw.circle(screen, [0,255,0], [150, 235], 40)  # roheline
 # joonistame jooned
 pygame.draw.rect(screen, [128, 128, 128], [100, 15, 100, 270], 2)
 
-
-
-
 #värskendame ekraani
 pygame.display.flip()
 
 #hoiame mängu elus (ilma selleta viskab kohe kinni)
 running = True
 while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
+    # mängu sulgemine ristist
+    for i in pygame.event.get():
+        if i.type == pygame.QUIT:
+            sys.exit()
 
 pygame.quit()

@@ -1,4 +1,5 @@
 import pygame
+import sys
 pygame.init()
 
 # määrame ekraani suuruse
@@ -28,8 +29,9 @@ pygame.display.flip()
 #hoiame mängu elus (ilma selleta viskab kohe kinni)
 running = True
 while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
+    # mängu sulgemine ristist
+    for i in pygame.event.get():
+        if i.type == pygame.QUIT:
+            sys.exit()
 
 pygame.quit()
