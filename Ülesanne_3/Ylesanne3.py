@@ -2,17 +2,17 @@ import pygame
 import sys
 pygame.init()
 
+# ekraani seaded
+screen = pygame.display.set_mode((640, 480))
+pygame.display.set_caption("Ülesanne 3")
+screen.fill(HRoheline)
+
 # värvid
 Punane = [255, 0, 0]
 Roheline = [0, 255, 0]
 Sinine = [0, 0, 255]
 Must = [0, 0, 0]
 HRoheline = [144, 238, 144]
-
-# ekraani seaded
-screen = pygame.display.set_mode((640, 480))
-pygame.display.set_caption("Ülesanne 3")
-screen.fill(HRoheline)
 
 # parameetrid
 ruudu_suurus = 20
