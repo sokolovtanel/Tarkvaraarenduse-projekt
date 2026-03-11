@@ -19,7 +19,7 @@ screen.blit(chat, (245, 70))
 
 # lisame teksti
 font = pygame.font.Font(None, 30)
-text = font.render("Tere, olen Tanel", True, (255, 255, 255))
+text = font.render("Tere, olen Tanel \nSokolov", True, (255, 255, 255))
 screen.blit(text, (300, 140))
 
 pygame.display.flip()
