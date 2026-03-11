@@ -4,23 +4,20 @@ pygame.init()
 # määrame ekraani suuruse
 screen = pygame.display.set_mode([300, 300])
 # programmi pealkiri
-pygame.display.set_caption("Lumemees - Tanel Sokolov")
+pygame.display.set_caption("Valgusfoor - Tanel Sokolov")
 # taustavärv
 screen.fill([0, 0, 0])
 
-# keha - 3 ringi
 # pygame.draw.circle(screen, värv, tsentri_pos, raadius)
-pygame.draw.circle(screen, [255,255,255], [150, 220], 50)  # alumine
-pygame.draw.circle(screen, [255,255,255], [150, 135], 40)  # keskmine
-pygame.draw.circle(screen, [255,255,255], [150, 70],  30)  # pea
+pygame.draw.circle(screen, [255,0,0], [150, 65],  40)  # punane
+pygame.draw.circle(screen, [255,255,0], [150, 150], 40)  # kollane
+pygame.draw.circle(screen, [0,255,0], [150, 235], 40)  # roheline
 
-# Silmad
-pygame.draw.circle(screen, [0,0,0], [140,65], 5) #138 5
-pygame.draw.circle(screen, [0,0,0], [160, 65], 5) #162 5
+# joonistame jooned
+pygame.draw.rect(screen, [128, 128, 128], [100, 15, 100, 270], 2)
 
-# Nina (punane kolmnurk)
-#pygame.draw.polygon(screen, värv, koordinaatide_loend)
-pygame.draw.polygon(screen, [255,0,0], [[150, 90], [145, 75], [155, 75]])
+
+
 
 #värskendame ekraani
 pygame.display.flip()
