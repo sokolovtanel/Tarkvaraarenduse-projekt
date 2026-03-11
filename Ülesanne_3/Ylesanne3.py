@@ -9,7 +9,6 @@ Sinine = [0, 0, 255]
 Must = [0, 0, 0]
 HRoheline = [144, 238, 144]
 
-
 # ekraani seaded
 screen = pygame.display.set_mode((640, 480))
 pygame.display.set_caption("Ülesanne 3")
