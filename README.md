@@ -1,8 +1,8 @@
-# Tarkvaraarenduse Projektid
+# Tarkvaraarenduse projekt
 
-Siin repos asuvad minu tarkvaraarenduse projektid.
+Siin repos asuvad minu tarkvaraarenduse projekti ülesanded.
 
-## Projektid
+## Ülesanded
 
 - [Ülesanne 1: Akna loomine ja kujundid](Ülesanne_1)
 - [Ülesanne 2: Tekstide ja piltide kasutamine](Ülesanne_2)
