@@ -43,7 +43,7 @@ while running:
     pall_rect.x += kiirusX
     pall_rect.y += kiirusY
 
-    #liigutame alust
+    # liigutame alust
     alus_rect.x += alusKiirus
 
     # pallipõrgatus
