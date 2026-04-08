@@ -10,3 +10,4 @@ Siin repos asuvad minu tarkvaraarenduse projekti ülesanded.
 - [Ülesanne 4: Objektide animeerimine](Ülesanne_4)
 - [Ülesanne 5: Ping-Pong](Ülesanne_5)
 - [Ülesanne 6: Korrastada mäng Ping-Pong](Ülesanne_6)
+- [Ülesanne 7: Uue mängu loomine (+lisainfoga)](Ülesanne_7)
