@@ -38,7 +38,7 @@ while running:
         ringid.append((mousePos, suvav2rv))
 
     # kui loendis on üle 10 ringi, kustutatakse esimene
-    if rKogus >= 10:
+    if rKogus > 10:
         del ringid[0]
 
     # joonistame ringid ekraanile
