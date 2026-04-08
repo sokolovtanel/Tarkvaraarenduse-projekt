@@ -1,8 +1,6 @@
 import pygame
 import sys
-import time
 import random
-
 pygame.init()
 
 # ekraani seaded
@@ -13,7 +11,7 @@ screen = pygame.display.set_mode((screenX, screenY))
 clock = pygame.time.Clock()
 pygame.display.set_caption("Hiir")
 
-# def
+# muutujad
 ringid = []
 rSuurus = 10
 
@@ -27,24 +25,25 @@ while running:
     # ekraani taustavärv
     screen.fill([153, 204, 255])
 
-    rKogus = len(ringid)
-
-
     # hiireliigutused / klõpsud
     mousePos = pygame.mouse.get_pos()
     click = pygame.mouse.get_pressed()
 
+    # siia kogume ringide koguse
+    rKogus = len(ringid)
+
     # kui tehakse hiireklikk ja seda ei ole veel loendis, lisatakse loendisse
-    if any(click) and mousePos not in ringid:
-        ringid.append(mousePos)
+    if any(click) and mousePos not in [pos for pos, varv in ringid]:
+        suvav2rv = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        ringid.append((mousePos, suvav2rv))
 
     # kui loendis on üle 10 ringi, kustutatakse esimene
     if rKogus >= 10:
         del ringid[0]
 
-    # loop-iga joonistatakse ekraanile
-    for i in ringid:
-        pygame.draw.circle(screen, (0, 0, 255), i, rSuurus, 1)
+    # joonistame ringid ekraanile
+    for pos, suvav2rv in ringid:
+        pygame.draw.circle(screen, suvav2rv, pos, rSuurus, 1)
 
     # ekraanivärskendus
     clock.tick(fps)
